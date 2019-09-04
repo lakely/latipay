@@ -44,6 +44,7 @@ class LatipayController
     protected $config = [
         'api_key' => 'api_key',
 				'user_id' => 'user_id',
+				'wallet_id' => 'wallet_id',//支付货币id
 				'version' => '2.0',//default
     ];
 
@@ -52,7 +53,6 @@ class LatipayController
         $order = [
             'merchant_reference' => time(),
 						'amount' => '0.2',
-						'wallet_id' => 'W000000347',//支付货币id
 						'product_name' => 'test order - 测试',
 						'return_url' => 'return_url',
 						'callback_url' => 'callback_url',
