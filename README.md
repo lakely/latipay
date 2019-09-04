@@ -42,21 +42,21 @@ class LatipayController
 {
     protected $config = [
         'api_key' => 'api_key',
-				'user_id' => 'user_id',
-				'wallet_id' => 'wallet_id',//支付货币id
-				'version' => '2.0',//default
+        'user_id' => 'user_id',
+        'wallet_id' => 'wallet_id',//支付货币id
+        'version' => '2.0',//default
     ];
 
     public function index()
     {
         $order = [
             'merchant_reference' => time(),
-						'amount' => '0.2',
-						'product_name' => 'test order - 测试',
-						'return_url' => 'return_url',
-						'callback_url' => 'callback_url',
-						'payment_method' => 'wechat', // wechat, alipay, onlineBank
-						'present_qr' => '1', // wechat
+            'amount' => '0.2',
+            'product_name' => 'test order - 测试',
+            'return_url' => 'return_url',
+            'callback_url' => 'callback_url',
+            'payment_method' => 'wechat', // wechat, alipay, onlineBank
+            //'present_qr' => '1', // wechat
         ];
 
         $result = Pay::latipay($this->config)->web($order);
@@ -71,30 +71,27 @@ class LatipayController
     }
     
     //查询订单
-		public function queryOrder($orderId)
-		{
-				return Pay::latipay($this->config)->find($orderId);
-		}
+    public function queryOrder($orderId)
+    {
+        return Pay::latipay($this->config)->find($orderId);
+    }
 
-
-		//支付完成后（成功或失败）浏览器重定向
+    //支付完成后（成功或失败）浏览器重定向
     public function return()
     {
         $data = Pay::latipay($this->config)->verify(); // 是的，验签就这么简单！
-
-				//$data为collection
-				//  "merchant_reference" => "1567568358"
-				//  "order_id" => "2019090400003370"
-				//  "currency" => "NZD"
-				//  "status" => "paid"
-				//  "payment_method" => "wechat"
-				//  "signature" => "103600c090f5f0738a2df5c891faf192b46111f0dca3ac5712d6138234054f4b"
-				//  "createDate" => "2019-09-04 03:39:19"
-				//  "amount" => "0.02"
-				
+        
+        //$data为collection
+        //"merchant_reference" => "1567568358"
+        //"order_id" => "2019090400003370"
+        //"currency" => "NZD"
+        //"status" => "paid"
+        //"payment_method" => "wechat"
+        //"signature" => "103600c090f5f0738a2df5c891faf192b46111f0dca3ac5712d6138234054f4b"
+        //"createDate" => "2019-09-04 03:39:19"
+        //"amount" => "0.02"
 				
 				//重定向逻辑
-       
     }
 
 
