@@ -17,7 +17,6 @@ Mamba\Latipay\PayServiceProvider::class,
 
 ####配置文件
 ```
-// laravel < 5.5
 php artisan vendor:publish --provider="Mamba\Latipay\PayServiceProvider"
 ```
 
