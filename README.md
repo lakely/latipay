@@ -6,7 +6,7 @@
 
 ## 安装
 ```shell
-composer require yansongda/pay -vvv
+composer require mamba/latipay:dev-master
 ```
 
 ####添加 service provider（optional. if laravel < 5.5)
