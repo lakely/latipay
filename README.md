@@ -56,7 +56,7 @@ class LatipayController
             'return_url' => 'return_url',
             'callback_url' => 'callback_url',
             'payment_method' => 'wechat', // wechat, alipay, onlineBank
-            //'present_qr' => '1', // wechat
+            'present_qr' => '1', // wechat
         ];
 
         $result = Pay::latipay($this->config)->web($order);
