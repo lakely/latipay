@@ -1,4 +1,4 @@
-<h1 align="center">Latiay</h1>
+<h1 align="center">Latipay</h1>
 
 ## 运行环境
 - PHP 7.0+
@@ -90,12 +90,11 @@ class LatipayController
         //"signature" => "103600c090f5f0738a2df5c891faf192b46111f0dca3ac5712d6138234054f4b"
         //"createDate" => "2019-09-04 03:39:19"
         //"amount" => "0.02"
-				
-				//重定向逻辑
+        
+        //重定向逻辑
     }
 
-
-		//支付结果异步通知
+    //支付结果异步通知
     public function notify()
     {
         $latipay = Pay::latipay($this->config);
