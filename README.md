@@ -2,27 +2,7 @@
 
 ## 运行环境
 - PHP 7.0+
-- composer
-
-## 支持的方法
-- find(array/string $order)  
-说明：查找订单接口
-使用：MyPay::latipay($config)->find('order id');  
-
-- refund(array $order)  
-说明：退款接口  
-
-- cancel(array/string $order)  
-说明：取消订单接口  
-
-- close(array/string $order)  
-说明：关闭订单接口  
-
-- verify()  
-说明：验证服务器返回消息是否合法  
-
-- PAYMETHOD(array $order)  
-说明：进行支付；具体支付方法名称请参考「支持的支付方法」一栏  
+- composer 
 
 ## 安装
 ```shell
