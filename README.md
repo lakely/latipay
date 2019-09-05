@@ -1,8 +1,6 @@
 <h1 align="center">Latipay</h1>
 
 ## 运行环境
-- PHP 7.0+
-- composer 
 
 ## 安装
 ```shell
