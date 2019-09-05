@@ -19,7 +19,7 @@ use Psr\Http\Message\ResponseInterface;
  * @property string timeout        timeout
  * @property string connectTimeout connect_timeout
  */
-trait HasHttpRequest
+trait HasHttpRequests
 {
     /**
      * Http client.

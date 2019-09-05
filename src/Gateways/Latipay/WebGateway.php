@@ -17,6 +17,10 @@ class WebGateway implements GatewayInterface
         $payload['signature'] = hash_hmac('sha256', $preHash, $payload['api_key']);
         $payload['ip'] = Support::clientIP();
 
+        if(isset($payload['latipya_test']) && $payload['latipya_test']) {
+            $payload['ip'] = '127.0.0.1';
+        }
+
         $postData = Arr::only($payload, [
             'wallet_id',
             'amount',

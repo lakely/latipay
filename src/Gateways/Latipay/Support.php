@@ -4,11 +4,11 @@ namespace Latipay\LaravelPlugin\Gateways\Latipay;
 
 use Latipay\LaravelPlugin\Gateways\Latipay;
 use Latipay\LaravelPlugin\Kernel\Supports\Config;
-use Latipay\LaravelPlugin\Kernel\Traits\HasHttpRequest;
+use Latipay\LaravelPlugin\Kernel\Traits\HasHttpRequests;
 
 class Support
 {
-    use HasHttpRequest;
+    use HasHttpRequests;
 
     protected $baseUri;
 
