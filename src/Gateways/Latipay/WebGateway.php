@@ -66,13 +66,13 @@ class WebGateway implements GatewayInterface
     /**
      * Find.
      *
-     * @author yansongda <me@yansongda.cn>
+     * @author mamba <me@mamba.cn>
      *
      * @param $order
      *
      * @return array
      */
-    public function find($order): array
+    public function find($order)
     {
         return [
             'method'      => 'latipay.trade.query',
@@ -83,7 +83,7 @@ class WebGateway implements GatewayInterface
     /**
      * Build Html response.
      *
-     * @author yansongda <me@yansongda.cn>
+     * @author mamba <me@mamba.cn>
      *
      * @param string $endpoint
      * @param array  $payload
@@ -91,7 +91,7 @@ class WebGateway implements GatewayInterface
      *
      * @return Response
      */
-    protected function buildPayHtml($endpoint, $payload, $method = 'POST'): Response
+    protected function buildPayHtml($endpoint, $payload, $method = 'POST')
     {
 
     }
@@ -99,11 +99,11 @@ class WebGateway implements GatewayInterface
     /**
      * Get method config.
      *
-     * @author yansongda <me@yansongda.cn>
+     * @author mamba <me@mamba.cn>
      *
      * @return string
      */
-    protected function getMethod(): string
+    protected function getMethod()
     {
         return 'latipay.trade.page.pay';
     }
@@ -111,11 +111,11 @@ class WebGateway implements GatewayInterface
     /**
      * Get productCode config.
      *
-     * @author yansongda <me@yansongda.cn>
+     * @author mamba <me@mamba.cn>
      *
      * @return string
      */
-    protected function getProductCode(): string
+    protected function getProductCode()
     {
         return 'FAST_INSTANT_TRADE_PAY';
     }

@@ -38,7 +38,7 @@ trait HasHttpRequests
     /**
      * Send a GET request.
      *
-     * @author yansongda <me@yansongda.cn>
+     * @author mamba <me@mamba.cn>
      *
      * @param string $endpoint
      * @param array  $query
@@ -57,7 +57,7 @@ trait HasHttpRequests
     /**
      * Send a POST request.
      *
-     * @author yansongda <me@yansongda.cn>
+     * @author mamba <me@mamba.cn>
      *
      * @param string       $endpoint
      * @param string|array $data
@@ -79,7 +79,7 @@ trait HasHttpRequests
     /**
      * Send request.
      *
-     * @author yansongda <me@yansongda.cn>
+     * @author mamba <me@mamba.cn>
      *
      * @param string $method
      * @param string $endpoint
@@ -95,7 +95,7 @@ trait HasHttpRequests
     /**
      * Set http client.
      *
-     * @author yansongda <me@yansongda.cn>
+     * @author mamba <me@mamba.cn>
      *
      * @param Client $client
      *
@@ -111,7 +111,7 @@ trait HasHttpRequests
     /**
      * Get default options.
      *
-     * @author yansongda <me@yansongda.cn>
+     * @author mamba <me@mamba.cn>
      *
      * @return array
      */
@@ -141,7 +141,7 @@ trait HasHttpRequests
     /**
      * Get default http client.
      *
-     * @author yansongda <me@yansongda.cn>
+     * @author mamba <me@mamba.cn>
      *
      * @return Client
      */
@@ -153,7 +153,7 @@ trait HasHttpRequests
     /**
      * Convert response.
      *
-     * @author yansongda <me@yansongda.cn>
+     * @author mamba <me@mamba.cn>
      *
      * @param ResponseInterface $response
      *

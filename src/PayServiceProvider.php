@@ -18,7 +18,7 @@ class PayServiceProvider extends ServiceProvider
     /**
      * Boot the service.
      *
-     * @author yansongda <me@yansongda.cn>
+     * @author mamba <me@mamba.cn>
      */
     public function boot()
     {
@@ -35,7 +35,7 @@ class PayServiceProvider extends ServiceProvider
     /**
      * Register the service.
      *
-     * @author yansongda <me@yansongda.cn>
+     * @author mamba <me@mamba.cn>
      *
      * @return void
      */
@@ -56,7 +56,7 @@ class PayServiceProvider extends ServiceProvider
     /**
      * Get services.
      *
-     * @author yansongda <me@yansongda.cn>
+     * @author mamba <me@mamba.cn>
      *
      * @return array
      */

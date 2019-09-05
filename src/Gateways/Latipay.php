@@ -75,7 +75,7 @@ class Latipay implements GatewayApplicationInterface
             $wallet = $apiData['payment_method'];
         }
 
-        $wallet = $wallet ?? 'Wechat,Alipay';
+        $wallet = isset($wallet) ? $wallet : 'Wechat,Alipay';
         return explode(',', $wallet);
     }
 
@@ -119,15 +119,15 @@ class Latipay implements GatewayApplicationInterface
             $data = $request->request->count() > 0 ? $request->request->all() : $request->query->all();
         }
 
-        $paymentMethod = $data['payment_method'];
-        $status = $data['status'];
-        $currency = $data['currency'];
-        $amount = $data['amount'];
-        $orderId = $data['merchant_reference'];
+        $paymentMethod = isset($data['payment_method']) ? $data['payment_method'] : '';
+        $status = isset($data['status']) ? $data['status'] : '';
+        $currency = isset($data['currency']) ? $data['currency'] : '';
+        $amount = isset($data['amount']) ? $data['amount'] : '';
+        $orderId = isset($data['merchant_reference']) ? $data['merchant_reference'] : '';
 
         $signatureString = $orderId . $paymentMethod . $status . $currency . $amount;
         $signature = hash_hmac('sha256', $signatureString, $this->payload['api_key']);
-        if ($signature == $data['signature']) {
+        if (isset($data['signature']) && $signature == $data['signature']) {
             return new Collection($data);
         }
 
