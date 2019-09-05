@@ -412,12 +412,12 @@ class Arr
      * If no key is given to the method, the entire array will be replaced.
      *
      * @param array  $array
-     * @param string $key
+     * @param $key
      * @param mixed  $value
      *
      * @return array
      */
-    public static function set(array &$array, string $key, $value)
+    public static function set(array &$array, $key, $value)
     {
         $keys = explode('.', $key);
 
