@@ -49,7 +49,7 @@ class LatipayController
         'version' => '2.0',//default
     ];
 
-		//下单并返回支付url
+    //下单并返回支付url
     public function index()
     {
         $order = [
@@ -64,13 +64,13 @@ class LatipayController
 
         $result = Pay::latipay($this->config)->web($order);
 				
-				/*
-				 * result数据，redirect_url为支付url
-				 * Array(
+
+        /** result数据，redirect_url为支付url
+        * Array(
                [status] => success
                [redirect_url] => https://api.latiproduct.net/v2/gatewaydata_inapp/abcde
            )
-				 */
+        */
         return redirect($result['redirect_url']);
     }
     
