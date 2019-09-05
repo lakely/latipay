@@ -1,11 +1,11 @@
 <?php
 
-namespace Mamba\Latipay\Gateways\Latipay;
+namespace Latipay\LaravelPlugin\Gateways\Latipay;
 
 
-use Mamba\Latipay\Contracts\GatewayInterface;
-use Mamba\Latipay\Exceptions\BusinessException;
-use Mamba\Latipay\Kernel\Supports\Arr;
+use Latipay\LaravelPlugin\Contracts\GatewayInterface;
+use Latipay\LaravelPlugin\Exceptions\BusinessException;
+use Latipay\LaravelPlugin\Kernel\Supports\Arr;
 use Symfony\Component\HttpFoundation\Response;
 
 class WebGateway implements GatewayInterface

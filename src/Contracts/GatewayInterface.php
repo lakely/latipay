@@ -1,6 +1,6 @@
 <?php
 
-namespace Mamba\Latipay\Contracts;
+namespace Latipay\LaravelPlugin\Contracts;
 
 interface GatewayInterface
 {

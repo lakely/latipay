@@ -1,10 +1,10 @@
 <?php
 
-namespace Mamba\Latipay\Gateways\Latipay;
+namespace Latipay\LaravelPlugin\Gateways\Latipay;
 
-use Mamba\Latipay\Gateways\Latipay;
-use Mamba\Latipay\Kernel\Supports\Config;
-use Mamba\Latipay\Kernel\Traits\HasHttpRequest;
+use Latipay\LaravelPlugin\Gateways\Latipay;
+use Latipay\LaravelPlugin\Kernel\Supports\Config;
+use Latipay\LaravelPlugin\Kernel\Traits\HasHttpRequest;
 
 class Support
 {

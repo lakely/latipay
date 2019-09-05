@@ -9,11 +9,11 @@
  * with this source code in the file LICENSE.
  */
 
-namespace Mamba\Latipay\Kernel\Traits;
+namespace Latipay\LaravelPlugin\Kernel\Traits;
 
-use Mamba\Latipay\Exceptions\InvalidArgumentException;
-use Mamba\Latipay\Kernel\SupportS\Arr;
-use Mamba\Latipay\Kernel\SupportS\Str;
+use Latipay\LaravelPlugin\Exceptions\InvalidArgumentException;
+use Latipay\LaravelPlugin\Kernel\SupportS\Arr;
+use Latipay\LaravelPlugin\Kernel\SupportS\Str;
 
 /**
  * Trait Attributes.
@@ -235,7 +235,7 @@ trait HasAttributes
     /**
      * Check required attributes.
      *
-     * @throws \Mamba\Latipay\Exceptions\InvalidArgumentException
+     * @throws \Latipay\LaravelPlugin\Exceptions\InvalidArgumentException
      */
     protected function checkRequiredAttributes()
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Mamba\Latipay\Kernel\Supports;
+namespace Latipay\LaravelPlugin\Kernel\Supports;
 
 class Config extends Collection
 {

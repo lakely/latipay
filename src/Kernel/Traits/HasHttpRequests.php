@@ -7,7 +7,7 @@
  * with this source code in the file LICENSE.
  */
 
-namespace Mamba\Latipay\Kernel\Traits;
+namespace Latipay\LaravelPlugin\Kernel\Traits;
 
 use GuzzleHttp\Client;
 use Psr\Http\Message\ResponseInterface;

@@ -1,6 +1,6 @@
 <?php
 
-namespace Mamba\Latipay\Exceptions;
+namespace Latipay\LaravelPlugin\Exceptions;
 
 class Exception extends \Exception
 {

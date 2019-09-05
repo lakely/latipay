@@ -6,18 +6,21 @@
 
 ## 安装
 ```shell
-composer require mamba/latipay:dev-master
+composer require latipay/laravel-plugin:dev-master
 ```
 
 ####添加 service provider（optional. if laravel < 5.5)
 ```
 // laravel < 5.5
-Mamba\Latipay\PayServiceProvider::class,
+Latipay\LaravelPlugin\PayServiceProvider::class,
+
+// lumen
+$app->register(Latipay\LaravelPlugin\PayServiceProvider::class);
 ```
 
 ####配置文件
 ```
-php artisan vendor:publish --provider="Mamba\Latipay\PayServiceProvider"
+php artisan vendor:publish --provider="Latipay\LaravelPlugin\PayServiceProvider"
 ```
 
 `.env`文件中配置
@@ -36,7 +39,7 @@ LATIPAY_WALLET_ID_CNY=
 
 namespace App\Http\Controllers;
 
-use Mamba\Latipay\Pay;
+use Latipay\LaravelPlugin\Pay;
 
 class LatipayController
 {

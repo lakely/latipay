@@ -9,7 +9,7 @@
  * with this source code in the file LICENSE.
  */
 
-namespace Mamba\Latipay\Contracts;
+namespace Latipay\LaravelPlugin\Contracts;
 
 use ArrayAccess;
 

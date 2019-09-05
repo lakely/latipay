@@ -1,18 +1,18 @@
 <?php
 
-namespace Mamba\Latipay\Gateways;
+namespace Latipay\LaravelPlugin\Gateways;
 
-use Mamba\Latipay\Exceptions\BusinessException;
-use Mamba\Latipay\Exceptions\InvalidSignException;
-use Mamba\Latipay\Kernel\Supports\Collection;
+use Latipay\LaravelPlugin\Exceptions\BusinessException;
+use Latipay\LaravelPlugin\Exceptions\InvalidSignException;
+use Latipay\LaravelPlugin\Kernel\Supports\Collection;
 use Symfony\Component\HttpFoundation\Request;
-use Mamba\Latipay\Contracts\GatewayApplicationInterface;
-use Mamba\Latipay\Contracts\GatewayInterface;
-use Mamba\Latipay\Exceptions\InvalidConfigException;
-use Mamba\Latipay\Exceptions\InvalidGatewayException;
-use Mamba\Latipay\Gateways\Latipay\Support;
-use Mamba\Latipay\Kernel\Supports\Config;
-use Mamba\Latipay\Kernel\Supports\Str;
+use Latipay\LaravelPlugin\Contracts\GatewayApplicationInterface;
+use Latipay\LaravelPlugin\Contracts\GatewayInterface;
+use Latipay\LaravelPlugin\Exceptions\InvalidConfigException;
+use Latipay\LaravelPlugin\Exceptions\InvalidGatewayException;
+use Latipay\LaravelPlugin\Gateways\Latipay\Support;
+use Latipay\LaravelPlugin\Kernel\Supports\Config;
+use Latipay\LaravelPlugin\Kernel\Supports\Str;
 use Symfony\Component\HttpFoundation\Response;
 
 class Latipay implements GatewayApplicationInterface

@@ -1,11 +1,11 @@
 <?php
 
-namespace Mamba\Latipay;
+namespace Latipay\LaravelPlugin;
 
-use Mamba\Latipay\Contracts\GatewayApplicationInterface;
-use Mamba\Latipay\Exceptions\InvalidGatewayException;
-use Mamba\Latipay\Kernel\Supports\Config;
-use Mamba\Latipay\Kernel\Supports\Str;
+use Latipay\LaravelPlugin\Contracts\GatewayApplicationInterface;
+use Latipay\LaravelPlugin\Exceptions\InvalidGatewayException;
+use Latipay\LaravelPlugin\Kernel\Supports\Config;
+use Latipay\LaravelPlugin\Kernel\Supports\Str;
 
 class Pay
 {

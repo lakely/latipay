@@ -9,12 +9,12 @@
  * with this source code in the file LICENSE.
  */
 
-namespace Mamba\Latipay\Kernel\Supports;
+namespace Latipay\LaravelPlugin\Kernel\Supports;
 
 use ArrayAccess;
 use ArrayIterator;
 use Countable;
-use Mamba\Latipay\Contracts\Arrayable;
+use Latipay\LaravelPlugin\Contracts\Arrayable;
 use IteratorAggregate;
 use JsonSerializable;
 use Serializable;
@@ -58,7 +58,7 @@ class Collection implements ArrayAccess, Countable, IteratorAggregate, JsonSeria
      *
      * @param array $keys
      *
-     * @return \Mamba\Latipay\Kernel\Supports\Collection
+     * @return \Latipay\LaravelPlugin\Kernel\Supports\Collection
      */
     public function only(array $keys)
     {
@@ -94,7 +94,7 @@ class Collection implements ArrayAccess, Countable, IteratorAggregate, JsonSeria
      *
      * @param Collection|array $items
      *
-     * @return \Mamba\Latipay\Kernel\Supports\Collection
+     * @return \Latipay\LaravelPlugin\Kernel\Supports\Collection
      */
     public function merge($items)
     {

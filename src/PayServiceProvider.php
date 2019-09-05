@@ -1,6 +1,6 @@
 <?php
 
-namespace Mamba\Latipay;
+namespace Latipay\LaravelPlugin;
 
 use Illuminate\Foundation\Application as LaravelApplication;
 use Illuminate\Support\ServiceProvider;

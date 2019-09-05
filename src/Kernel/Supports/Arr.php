@@ -9,7 +9,7 @@
  * with this source code in the file LICENSE.
  */
 
-namespace Mamba\Latipay\Kernel\Supports;
+namespace Latipay\LaravelPlugin\Kernel\Supports;
 
 /**
  * Array helper from Illuminate\Support\Arr.

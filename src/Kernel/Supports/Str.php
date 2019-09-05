@@ -9,10 +9,10 @@
  * with this source code in the file LICENSE.
  */
 
-namespace Mamba\Latipay\Kernel\Supports;
+namespace Latipay\LaravelPlugin\Kernel\Supports;
 
 
-use Mamba\Latipay\Exceptions\BusinessException;
+use Latipay\LaravelPlugin\Exceptions\BusinessException;
 
 /**
  * Class Str.
