@@ -5,7 +5,7 @@
 
 ## 安装
 ```shell
-composer require latipay/laravel-plugin:dev-master
+composer require latipay/laravel-plugin
 ```
 
 ####添加 service provider（optional. if laravel < 5.5)
