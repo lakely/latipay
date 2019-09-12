@@ -19,7 +19,11 @@ $app->register(Latipay\LaravelPlugin\PayServiceProvider::class);
 
 ####配置文件
 ```
+// laravel
 php artisan vendor:publish --provider="Latipay\LaravelPlugin\PayServiceProvider"
+
+// Lumen
+将`vendor/latipay/laravel-plugin/config/config.php`拷贝到`项目根目录/config`目录下，并将文件名改成`latipay.php`
 ```
 
 `.env`文件中配置
@@ -42,6 +46,8 @@ use Latipay\LaravelPlugin\Pay;
 
 class LatipayController
 {
+    // 将api_key, user_id, wallet_id换成对应的配置。
+    // lumen配置信息参考文档：https://learnku.com/docs/lumen/5.7/configuration/2403
     protected $config = [
         'api_key' => 'api_key',
         'user_id' => 'user_id',
